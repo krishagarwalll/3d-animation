@@ -29,11 +29,15 @@ Material:
   m_ModifiedSerializedProperties: 18
   m_ValidKeywords:
   - _DISABLE_SSR_TRANSPARENT
+  - _DISPLACEMENT_LOCK_TILING_SCALE
   - _ENABLE_FOG_ON_TRANSPARENT
+  - _HEIGHTMAP
   - _MASKMAP
   - _NORMALMAP
   - _NORMALMAP_TANGENT_SPACE
   - _SURFACE_TYPE_TRANSPARENT
+  - _VERTEX_DISPLACEMENT
+  - _VERTEX_DISPLACEMENT_LOCK_OBJECT_SCALE
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -53,6 +57,10 @@ Material:
     m_TexEnvs:
     - _BaseColorMap:
         m_Texture: {fileID: 2800000, guid: 1adfe0fc0872246b7a38908f4146a3f3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HeightMap:
+        m_Texture: {fileID: 2800000, guid: f3acc4b0f286144089f746f6ffa5526e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
