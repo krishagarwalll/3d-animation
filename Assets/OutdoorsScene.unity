@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: KB3D_CyberStreets-Native.fbx_BldgLG_C
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1090711f8396a49e8aa297a5160bb1e8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -227,6 +231,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d2387faabf733146bf4dfed60f40c48, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_B
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d2387faabf733146bf4dfed60f40c48, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -525,11 +533,76 @@ PrefabInstance:
       propertyPath: m_Name
       value: Motorbike
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2be934f2ac1d04a6fa7f29952a6aae7c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2be934f2ac1d04a6fa7f29952a6aae7c, type: 3}
+--- !u!1001 &332499166
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e59091247f8234af880146e53579681e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.737427
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e59091247f8234af880146e53579681e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0109468745
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e59091247f8234af880146e53579681e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 63.372566
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e59091247f8234af880146e53579681e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e59091247f8234af880146e53579681e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e59091247f8234af880146e53579681e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e59091247f8234af880146e53579681e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e59091247f8234af880146e53579681e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e59091247f8234af880146e53579681e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e59091247f8234af880146e53579681e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e59091247f8234af880146e53579681e, type: 3}
+      propertyPath: m_Name
+      value: kb3d_futureslumstwo-native.fbx_BldgLgApartmentComplex_B
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e59091247f8234af880146e53579681e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e59091247f8234af880146e53579681e, type: 3}
 --- !u!1 &432432459
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: KB3D_CyberStreets-Native.fbx_BldgMD_A
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c466a82ea91ac40538f2cd70ea92c851, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -687,6 +764,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 00eba4f00132844e4aa90f0f95060fef, type: 3}
       propertyPath: m_Name
       value: KB3D_CyberStreets-Native.fbx_BldgMD_E
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 00eba4f00132844e4aa90f0f95060fef, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -745,6 +826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Interior4
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63227a0b1d7244d5ab71d11dbdcb17ba, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -801,6 +886,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fabf1c103a1be453089b19e16527ab6f, type: 3}
       propertyPath: m_Name
       value: kb3d_cyberdistrict-native.fbx_BldgLgBikeStopA
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fabf1c103a1be453089b19e16527ab6f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -859,6 +948,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PoliceCar
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d19a0faa832494690ab1acc985ace457, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -916,11 +1009,76 @@ PrefabInstance:
       propertyPath: m_Name
       value: KB3D_CyberPunk-Native.fbx_PcRepair_A
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 48ef9b2c4af294d3fab27316538604c8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48ef9b2c4af294d3fab27316538604c8, type: 3}
+--- !u!1001 &1540596246
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 888d9956526a1438d9475a768ec7ee9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.52508
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 888d9956526a1438d9475a768ec7ee9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000060973674
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 888d9956526a1438d9475a768ec7ee9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 55.68402
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 888d9956526a1438d9475a768ec7ee9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 888d9956526a1438d9475a768ec7ee9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 888d9956526a1438d9475a768ec7ee9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 888d9956526a1438d9475a768ec7ee9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 888d9956526a1438d9475a768ec7ee9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 888d9956526a1438d9475a768ec7ee9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 888d9956526a1438d9475a768ec7ee9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 888d9956526a1438d9475a768ec7ee9d, type: 3}
+      propertyPath: m_Name
+      value: kb3d_futureslumstwo-native.fbx_BldgMdDuplex_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 888d9956526a1438d9475a768ec7ee9d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 888d9956526a1438d9475a768ec7ee9d, type: 3}
 --- !u!1001 &1777809348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -972,6 +1130,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5db1e42cdf2844e308466005d2227573, type: 3}
       propertyPath: m_Name
       value: KB3D_CyberStreets-Native.fbx_BldgLG_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db1e42cdf2844e308466005d2227573, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1029,6 +1191,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 05d9b8517f03145419710e3d953d6222, type: 3}
       propertyPath: m_Name
       value: RuggedCar
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 05d9b8517f03145419710e3d953d6222, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1319,6 +1485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: KB3D_CyberPunk-Native.fbx_Hypergear_B
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b10d41386b4944b309f9b242ce9dd8bf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1425,6 +1595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: KB3D_CyberStreets-Native.fbx_BldgLG_I
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 640d6fa3a56c44bf3a574bff826ade85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1451,3 +1625,5 @@ SceneRoots:
   - {fileID: 628873836}
   - {fileID: 837104553}
   - {fileID: 55763512}
+  - {fileID: 1540596246}
+  - {fileID: 332499166}
