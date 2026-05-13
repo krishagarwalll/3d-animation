@@ -119,6 +119,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &55763512
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 1090711f8396a49e8aa297a5160bb1e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.246805
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1090711f8396a49e8aa297a5160bb1e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0019960504
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1090711f8396a49e8aa297a5160bb1e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 52.839245
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1090711f8396a49e8aa297a5160bb1e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1090711f8396a49e8aa297a5160bb1e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1090711f8396a49e8aa297a5160bb1e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1090711f8396a49e8aa297a5160bb1e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1090711f8396a49e8aa297a5160bb1e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1090711f8396a49e8aa297a5160bb1e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1090711f8396a49e8aa297a5160bb1e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1090711f8396a49e8aa297a5160bb1e8, type: 3}
+      propertyPath: m_Name
+      value: KB3D_CyberStreets-Native.fbx_BldgLG_C
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1090711f8396a49e8aa297a5160bb1e8, type: 3}
 --- !u!1001 &121282743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -522,6 +579,120 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &628873836
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c466a82ea91ac40538f2cd70ea92c851, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.582554
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c466a82ea91ac40538f2cd70ea92c851, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00000022032086
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c466a82ea91ac40538f2cd70ea92c851, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 52.21603
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c466a82ea91ac40538f2cd70ea92c851, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c466a82ea91ac40538f2cd70ea92c851, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c466a82ea91ac40538f2cd70ea92c851, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c466a82ea91ac40538f2cd70ea92c851, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c466a82ea91ac40538f2cd70ea92c851, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c466a82ea91ac40538f2cd70ea92c851, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c466a82ea91ac40538f2cd70ea92c851, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c466a82ea91ac40538f2cd70ea92c851, type: 3}
+      propertyPath: m_Name
+      value: KB3D_CyberStreets-Native.fbx_BldgMD_A
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c466a82ea91ac40538f2cd70ea92c851, type: 3}
+--- !u!1001 &837104553
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 00eba4f00132844e4aa90f0f95060fef, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.044688
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00eba4f00132844e4aa90f0f95060fef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00000028271975
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00eba4f00132844e4aa90f0f95060fef, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 54.120728
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00eba4f00132844e4aa90f0f95060fef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00eba4f00132844e4aa90f0f95060fef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00eba4f00132844e4aa90f0f95060fef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00eba4f00132844e4aa90f0f95060fef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00eba4f00132844e4aa90f0f95060fef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00eba4f00132844e4aa90f0f95060fef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00eba4f00132844e4aa90f0f95060fef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 00eba4f00132844e4aa90f0f95060fef, type: 3}
+      propertyPath: m_Name
+      value: KB3D_CyberStreets-Native.fbx_BldgMD_E
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 00eba4f00132844e4aa90f0f95060fef, type: 3}
 --- !u!1001 &947575983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -750,6 +921,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48ef9b2c4af294d3fab27316538604c8, type: 3}
+--- !u!1001 &1777809348
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5db1e42cdf2844e308466005d2227573, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.895793
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5db1e42cdf2844e308466005d2227573, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000011410674
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5db1e42cdf2844e308466005d2227573, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 43.545113
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5db1e42cdf2844e308466005d2227573, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5db1e42cdf2844e308466005d2227573, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5db1e42cdf2844e308466005d2227573, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5db1e42cdf2844e308466005d2227573, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5db1e42cdf2844e308466005d2227573, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5db1e42cdf2844e308466005d2227573, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5db1e42cdf2844e308466005d2227573, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db1e42cdf2844e308466005d2227573, type: 3}
+      propertyPath: m_Name
+      value: KB3D_CyberStreets-Native.fbx_BldgLG_A
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5db1e42cdf2844e308466005d2227573, type: 3}
 --- !u!1001 &1781578574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1145,6 +1373,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2099267962
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 640d6fa3a56c44bf3a574bff826ade85, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.937833
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 640d6fa3a56c44bf3a574bff826ade85, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.015536955
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 640d6fa3a56c44bf3a574bff826ade85, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 49.754425
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 640d6fa3a56c44bf3a574bff826ade85, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 640d6fa3a56c44bf3a574bff826ade85, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 640d6fa3a56c44bf3a574bff826ade85, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 640d6fa3a56c44bf3a574bff826ade85, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 640d6fa3a56c44bf3a574bff826ade85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 640d6fa3a56c44bf3a574bff826ade85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 640d6fa3a56c44bf3a574bff826ade85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 640d6fa3a56c44bf3a574bff826ade85, type: 3}
+      propertyPath: m_Name
+      value: KB3D_CyberStreets-Native.fbx_BldgLG_I
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 640d6fa3a56c44bf3a574bff826ade85, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1161,3 +1446,8 @@ SceneRoots:
   - {fileID: 1008061594}
   - {fileID: 1914729553}
   - {fileID: 1317668139}
+  - {fileID: 1777809348}
+  - {fileID: 2099267962}
+  - {fileID: 628873836}
+  - {fileID: 837104553}
+  - {fileID: 55763512}
