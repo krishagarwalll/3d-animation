@@ -26,24 +26,55 @@ public class AutoAreaLightGenerator : Editor
 
             GameObject lightObj = new GameObject(obj.name + "_AreaLight");
             lightObj.transform.SetParent(obj.transform);
-            
-            lightObj.transform.localPosition = new Vector3(0, 0, 0.1f); 
-            lightObj.transform.localRotation = Quaternion.identity;
-            lightObj.transform.localScale = Vector3.one;
+
+            // Fetch the bounding box of the mesh to calculate its actual shape
+            Vector3 size = filter.sharedMesh.bounds.size;
+            Vector3 extents = filter.sharedMesh.bounds.extents;
+            Vector3 center = filter.sharedMesh.bounds.center;
+
+            // Find the thinnest side of the mesh (this represents the screen's depth)
+            float minSize = Mathf.Min(size.x, Mathf.Min(size.y, size.z));
+
+            float lightWidth = 1f;
+            float lightHeight = 1f;
+            Vector3 offsetDirection = Vector3.zero;
+            Quaternion lightRotation = Quaternion.identity;
+
+            // Dynamically rotate the light based on which way the screen is facing
+            if (minSize == size.z)
+            {
+                lightWidth = size.x * obj.transform.localScale.x;
+                lightHeight = size.y * obj.transform.localScale.y;
+                offsetDirection = new Vector3(0, 0, extents.z + 0.05f);
+                lightRotation = Quaternion.identity; // Faces Local Z
+            }
+            else if (minSize == size.y)
+            {
+                lightWidth = size.x * obj.transform.localScale.x;
+                lightHeight = size.z * obj.transform.localScale.z;
+                offsetDirection = new Vector3(0, extents.y + 0.05f, 0);
+                lightRotation = Quaternion.Euler(90, 0, 0); // Faces Local Y
+            }
+            else
+            {
+                lightWidth = size.z * obj.transform.localScale.z;
+                lightHeight = size.y * obj.transform.localScale.y;
+                offsetDirection = new Vector3(extents.x + 0.05f, 0, 0);
+                lightRotation = Quaternion.Euler(0, -90, 0); // Faces Local X
+            }
+
+            // Apply calculated position and rotation
+            lightObj.transform.localPosition = center + offsetDirection;
+            lightObj.transform.localRotation = lightRotation;
 
             Light light = lightObj.AddComponent<Light>();
             light.type = LightType.Rectangle;
-
             HDAdditionalLightData hdLight = lightObj.AddComponent<HDAdditionalLightData>();
 
-            // Calculate the size based on the mesh bounding box
-            Vector3 meshSize = filter.sharedMesh.bounds.size;
-            float width = Mathf.Max(meshSize.x * obj.transform.localScale.x, 0.5f);
-            float height = Mathf.Max(meshSize.y * obj.transform.localScale.y, 0.5f);
+            // Apply size
+            light.areaSize = new Vector2(Mathf.Max(lightWidth, 0.5f), Mathf.Max(lightHeight, 0.5f));
 
-            // THE FIX 1 & 2: Set the Area Size directly on the standard Light component
-            light.areaSize = new Vector2(width, height);
-
+            // Steal color
             Material mat = renderer.sharedMaterial;
             if (mat != null && mat.HasProperty("_EmissiveColor"))
             {
@@ -52,17 +83,15 @@ public class AutoAreaLightGenerator : Editor
                 light.color = Color.HSVToRGB(h, s, 1f);
             }
 
-            // THE FIX 3: Set the Light Unit directly on the standard Light component
+            // Apply HDRP Lighting Settings
             light.lightUnit = UnityEngine.Rendering.LightUnit.Ev100;
             light.intensity = 10f; 
-            
-            // Volumetric dimmer remains on the HDAdditionalLightData for now
             hdLight.volumetricDimmer = 2f; 
 
             Undo.RegisterCreatedObjectUndo(lightObj, "Create Auto Area Light");
             processedCount++;
         }
 
-        Debug.Log($"<color=cyan><b>Success!</b></color> Generated {processedCount} HDRP Area Lights.");
+        Debug.Log($"<color=cyan><b>Success!</b></color> Generated {processedCount} Smart Area Lights.");
     }
 }
