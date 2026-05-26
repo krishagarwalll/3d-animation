@@ -3999,6 +3999,120 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 05d9b8517f03145419710e3d953d6222, type: 3}
   m_PrefabInstance: {fileID: 398696778}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &466110936
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 379.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 172.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 351.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.27161917
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.96240485
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+      propertyPath: m_Name
+      value: AirShip
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 2668506188999270981, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+    - {fileID: 7988095087093259065, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+    - {fileID: 3247830166915189741, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+    - {fileID: -1176338797850782356, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+    - {fileID: 6630250064086599125, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+    - {fileID: -893020725641182207, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+    - {fileID: -1693630827778257496, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+    - {fileID: -5584992611737782597, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+    - {fileID: 6033760772003222724, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+    - {fileID: 4624602264839861841, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 466110938}
+  m_SourcePrefab: {fileID: 100100000, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+--- !u!1 &466110937 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af2d4c874b1b34b22bb1800135ff0333, type: 3}
+  m_PrefabInstance: {fileID: 466110936}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &466110938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466110937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29a074d529cf945029ef7cf40540c9df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Splines::UnityEngine.Splines.SplineAnimate
+  m_Target: {fileID: 1691783128}
+  m_PlayOnAwake: 1
+  m_LoopMode: 1
+  m_Method: 0
+  m_Duration: 20
+  m_MaxSpeed: 38.98046
+  m_EasingMode: 0
+  m_AlignmentMode: 1
+  m_ObjectForwardAxis: 2
+  m_ObjectUpAxis: 1
+  m_StartOffset: 0
 --- !u!1 &474622806 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2707952879601834932, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
@@ -19957,7 +20071,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 55
+  field of view: 35
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -19983,8 +20097,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119463407}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.01599349, y: -0.71305156, z: -0.016274482, w: 0.7007402}
-  m_LocalPosition: {x: 11.93, y: 1.2, z: -6.17}
+  m_LocalRotation: {x: 0, y: -0.8643289, z: 0, w: 0.502927}
+  m_LocalPosition: {x: 435.5, y: 172.4, z: 309.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25694,6 +25808,172 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 64346976183b3483ea172dc93f846be6, type: 3}
   m_PrefabInstance: {fileID: 1673758215}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1691783126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1691783129}
+  - component: {fileID: 1691783128}
+  - component: {fileID: 1691783127}
+  m_Layer: 0
+  m_Name: Airship Spline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1691783127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691783126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5342500578afb24a9b83d6343d32a0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineSplineSmoother
+  AutoSmooth: 1
+--- !u!114 &1691783128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691783126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Splines::UnityEngine.Splines.SplineContainer
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots:
+    - Position:
+        x: -56.200012
+        y: 0
+        z: 42.200012
+      TangentIn:
+        x: 0
+        y: 0
+        z: -64.26014
+      TangentOut:
+        x: 0
+        y: 0
+        z: 64.26014
+      Rotation:
+        value:
+          x: 0
+          y: 0.9624048
+          z: 0
+          w: -0.2716191
+    - Position:
+        x: -173.6
+        y: 0
+        z: -90.899994
+      TangentIn:
+        x: 0
+        y: 0
+        z: -65.84371
+      TangentOut:
+        x: 0
+        y: 0
+        z: 65.84371
+      Rotation:
+        value:
+          x: 0
+          y: 0.86989594
+          z: 0
+          w: -0.49323526
+    - Position:
+        x: -415.3
+        y: 0
+        z: -153.4
+      TangentIn:
+        x: 0
+        y: 0
+        z: -103.20119
+      TangentOut:
+        x: 0
+        y: 0
+        z: 103.20119
+      Rotation:
+        value:
+          x: 0
+          y: 0.7429467
+          z: 0
+          w: -0.6693506
+    - Position:
+        x: -763.4
+        y: 0
+        z: -171.1
+      TangentIn:
+        x: 0
+        y: 0
+        z: -0
+      TangentOut:
+        x: 0
+        y: 0
+        z: 0
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    m_MetaData:
+    - Mode: 2
+      Tension: 0.5
+    - Mode: 2
+      Tension: 0.5
+    - Mode: 2
+      Tension: 0.5
+    - Mode: 2
+      Tension: 0.5
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
+--- !u!4 &1691783129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691783126}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 435.5, y: 172.4, z: 309.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1696150294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34501,3 +34781,5 @@ SceneRoots:
   - {fileID: 1462309641}
   - {fileID: 176170233}
   - {fileID: 760917470}
+  - {fileID: 466110936}
+  - {fileID: 1691783129}
