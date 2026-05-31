@@ -14,6 +14,15 @@ public class PettingController : MonoBehaviour
     [Tooltip("The IK Constraint controlling the hand (Usually a TwoBoneIKConstraint).")]
     public TwoBoneIKConstraint handIKConstraint;
 
+    [Tooltip("The Multi-Aim Constraint controlling the head look target.")]
+    public MultiAimConstraint headLookConstraint;
+
+    [Tooltip("The Multi-Aim Constraint controlling the left eye tracking.")]
+    public MultiAimConstraint eyeLeftLookConstraint;
+
+    [Tooltip("The Multi-Aim Constraint controlling the right eye tracking.")]
+    public MultiAimConstraint eyeRightLookConstraint;
+
     [Tooltip("The script that handles snapping the hand to the cat's surface.")]
     public PettingSurfaceTracker tracker; 
 
@@ -41,9 +50,13 @@ public class PettingController : MonoBehaviour
 
     private void Start()
     {
-        // 1. Ensure both the torso AND the hand are completely turned off while she walks/sits
+        // 1. Ensure all constraints are completely turned off while she walks/sits
         if (torsoAimConstraint != null) torsoAimConstraint.weight = 0f;
         if (handIKConstraint != null) handIKConstraint.weight = 0f;
+        if (headLookConstraint != null) headLookConstraint.weight = 0f;
+        if (eyeLeftLookConstraint != null) eyeLeftLookConstraint.weight = 0f;
+        if (eyeRightLookConstraint != null) eyeRightLookConstraint.weight = 0f;
+        
         if (tracker != null) tracker.strokeProgress = 0f;
 
         // If auto-trigger is enabled, start the countdown immediately
@@ -80,15 +93,17 @@ public class PettingController : MonoBehaviour
         
         float startTorsoWeight = torsoAimConstraint.weight;
         float startHandWeight = handIKConstraint.weight;
+        float startHeadWeight = headLookConstraint != null ? headLookConstraint.weight : 0f;
+        float startEyeLeftWeight = eyeLeftLookConstraint != null ? eyeLeftLookConstraint.weight : 0f;
+        float startEyeRightWeight = eyeRightLookConstraint != null ? eyeRightLookConstraint.weight : 0f;
 
-        // --- PHASE 1: REACH AND TWIST ---
-        // Tell the Animator to start playing any base body adjustments
+        // --- PHASE 1: REACH, TWIST, AND LOOK ---
         if (!string.IsNullOrEmpty(pettingTriggerName))
         {
             characterAnimator.SetTrigger(pettingTriggerName);
         }
 
-        // Smoothly increase BOTH IK weights over time
+        // Smoothly increase ALL IK weights over time
         while (elapsedTime < twistDuration)
         {
             elapsedTime += Time.deltaTime;
@@ -97,8 +112,19 @@ public class PettingController : MonoBehaviour
             torsoAimConstraint.weight = Mathf.Lerp(startTorsoWeight, 1f, t);
             handIKConstraint.weight = Mathf.Lerp(startHandWeight, 1f, t);
             
+            if (headLookConstraint != null) headLookConstraint.weight = Mathf.Lerp(startHeadWeight, 1f, t);
+            if (eyeLeftLookConstraint != null) eyeLeftLookConstraint.weight = Mathf.Lerp(startEyeLeftWeight, 1f, t);
+            if (eyeRightLookConstraint != null) eyeRightLookConstraint.weight = Mathf.Lerp(startEyeRightWeight, 1f, t);
+            
             yield return null; 
         }
+
+        // Lock weights cleanly to 1
+        torsoAimConstraint.weight = 1f;
+        handIKConstraint.weight = 1f;
+        if (headLookConstraint != null) headLookConstraint.weight = 1f;
+        if (eyeLeftLookConstraint != null) eyeLeftLookConstraint.weight = 1f;
+        if (eyeRightLookConstraint != null) eyeRightLookConstraint.weight = 1f;
 
         // --- PHASE 2: PROCEDURAL STROKING ---
         for (int i = 0; i < numberOfStrokes; i++)
@@ -117,30 +143,35 @@ public class PettingController : MonoBehaviour
             progress = 0f;
             while (progress < 1f)
             {
-                // Returning slightly faster than stroking for a natural cadence
                 progress += Time.deltaTime * (strokeSpeed * 1.5f); 
                 tracker.strokeProgress = Mathf.SmoothStep(1f, 0f, progress);
                 yield return null;
             }
         }
 
-        // --- PHASE 3: PULL BACK AND UNTWIST ---
+        // --- PHASE 3: PULL BACK AND LOOK AWAY ---
         elapsedTime = 0f;
         while (elapsedTime < twistDuration)
         {
             elapsedTime += Time.deltaTime;
-            // Easing from 1 back down to 0
             float t = Mathf.SmoothStep(1f, 0f, elapsedTime / twistDuration);
             
             torsoAimConstraint.weight = t;
             handIKConstraint.weight = t;
+            if (headLookConstraint != null) headLookConstraint.weight = t;
+            if (eyeLeftLookConstraint != null) eyeLeftLookConstraint.weight = t;
+            if (eyeRightLookConstraint != null) eyeRightLookConstraint.weight = t;
             
             yield return null; 
         }
 
-        // Ensure weights are cleanly zeroed out and flag is reset
+        // Ensure weights are cleanly zeroed out
         torsoAimConstraint.weight = 0f;
         handIKConstraint.weight = 0f;
+        if (headLookConstraint != null) headLookConstraint.weight = 0f;
+        if (eyeLeftLookConstraint != null) eyeLeftLookConstraint.weight = 0f;
+        if (eyeRightLookConstraint != null) eyeRightLookConstraint.weight = 0f;
+        
         isPetting = false;
     }
 }

@@ -7,58 +7,61 @@ public class PettingSurfaceTracker : MonoBehaviour
     public Transform slideEnd;   
     
     [Header("IK Targets")]
-    public Transform handIkTarget; // The target your Two Bone IK uses
+    public Transform handIkTarget; // Assigned to your True_Hand_Target
 
     [Header("Stroke Control")]
-    [Tooltip("Animate this from 0 to 1 to slide the hand")]
     [Range(0f, 1f)]
     public float strokeProgress = 0f; 
 
     [Header("Raycast Settings")]
-    public LayerMask catLayer; // Make sure your cat is on this layer!
-    public float raycastDistance = 1.0f;
+    public LayerMask catLayer; 
+    public float raycastDistance = 2.0f;
     
-    // Optional: Offset the rotation so the palm faces the cat correctly
-    public Vector3 palmRotationOffset = new Vector3(90, 0, 0);
+    [Header("Fine-Tuning Offsets")]
+    [Tooltip("Local position offset (X=Left/Right, Y=Hover Height, Z=Forward/Backward relative to hand orientation)")]
+    public Vector3 handPositionOffset = Vector3.zero;
+
+    [Tooltip("Adjust this to lay the palm perfectly flat against the fur")]
+    public Vector3 palmRotationOffset = Vector3.zero;
 
     void LateUpdate()
     {
         if (slideStart == null || slideEnd == null || handIkTarget == null) return;
 
-        // 1. Calculate the current position along the invisible "rail"
-        Vector3 currentHoverPoint = Vector3.Lerp(slideStart.position, slideEnd.position, strokeProgress);
+        // 1. POSITION: Calculate the base hover position along the track
+        Vector3 basePosition = Vector3.Lerp(slideStart.position, slideEnd.position, strokeProgress);
 
-        // 2. Cast a ray downwards from that hover point
-        // Note: You may need to change Vector3.down to -slideStart.up if the cat rolls over!
-        if (Physics.Raycast(currentHoverPoint, Vector3.down, out RaycastHit hit, raycastDistance, catLayer))
+        // Snap base position to the fur collider if it hits
+        if (Physics.Raycast(basePosition, Vector3.down, out RaycastHit hit, raycastDistance, catLayer))
         {
-            // 3. Snap the IK Target precisely to the mesh surface
-            handIkTarget.position = hit.point;
+            basePosition = hit.point;
+        }
 
-            // 4. (Bonus) Align the hand's rotation to the slope of the cat's back
-            // This assumes your hand's "Up" vector should point away from the cat
-            handIkTarget.up = hit.normal;
-            handIkTarget.Rotate(palmRotationOffset); 
-        }
-        else
-        {
-            // Fallback just in case the raycast misses the cat
-            handIkTarget.position = currentHoverPoint;
-        }
+        // 2. ROTATION: Interpolate directly between the start and end marker rotations
+        Quaternion blendedRotation = Quaternion.Slerp(slideStart.rotation, slideEnd.rotation, strokeProgress);
+        Quaternion finalRotation = blendedRotation * Quaternion.Euler(palmRotationOffset);
+        
+        // Force the target's rotation first so we can use its coordinate space
+        handIkTarget.rotation = finalRotation;
+
+        // 3. APPLY LOCAL POSITION OFFSET
+        // Multiply the rotation matrix by our local offset vector to convert it into world space directions
+        Vector3 worldPositionOffset = finalRotation * handPositionOffset;
+        
+        // Combine the surface snapped position with our dynamic local offset
+        handIkTarget.position = basePosition + worldPositionOffset;
     }
+
     private void OnDrawGizmos()
     {
         if (slideStart != null && slideEnd != null)
         {
-            // Draw the invisible "Rail" in yellow
             Gizmos.color = Color.yellow;
             Gizmos.DrawLine(slideStart.position, slideEnd.position);
 
-            // Draw the Raycast shooting down in red
             Vector3 hover = Vector3.Lerp(slideStart.position, slideEnd.position, strokeProgress);
             Gizmos.color = Color.red;
             Gizmos.DrawRay(hover, Vector3.down * raycastDistance);
-
         }
     }
 }
