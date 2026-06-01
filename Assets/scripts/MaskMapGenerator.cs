@@ -14,7 +14,6 @@ public class MaskMapGenerator : EditorWindow
         string outputPath = EditorUtility.OpenFolderPanel("2. Select DESTINATION Folder", inputPath, "");
         if (string.IsNullOrEmpty(outputPath)) return;
 
-        // Ask the user if they want to destroy the original files
         bool deleteOriginals = EditorUtility.DisplayDialog(
             "Delete Source Files?", 
             "Do you want to PERMANENTLY DELETE the original Metallic, AO, and Roughness files after the Mask Maps are generated?\n\nThis cannot be undone!", 
@@ -32,15 +31,27 @@ public class MaskMapGenerator : EditorWindow
             if (file.EndsWith(".meta")) continue;
 
             string ext = Path.GetExtension(file).ToLower();
-            if (ext != ".png" && ext != ".jpg" && ext != ".jpeg") continue;
+            
+            // FIX 1: Added .tga to the allowed extensions
+            if (ext != ".png" && ext != ".jpg" && ext != ".jpeg" && ext != ".tga") continue;
+
+            string fileName = Path.GetFileNameWithoutExtension(file);
+            string fileNameLower = fileName.ToLower();
+            string baseName = "";
+            
+            // FIX 2: Explicitly remove known suffixes to ensure perfectly matching base names
+            if (fileNameLower.EndsWith("_metallic"))
+                baseName = fileName.Substring(0, fileName.Length - 9);
+            else if (fileNameLower.EndsWith("_mixed_ao"))
+                baseName = fileName.Substring(0, fileName.Length - 9);
+            else if (fileNameLower.EndsWith("_ao"))
+                baseName = fileName.Substring(0, fileName.Length - 3);
+            else if (fileNameLower.EndsWith("_roughness"))
+                baseName = fileName.Substring(0, fileName.Length - 10);
+            else
+                continue; // Skip files that aren't target maps (e.g., Base_Color, Normal)
 
             validTextureCount++;
-            string fileName = Path.GetFileNameWithoutExtension(file);
-            
-            int lastUnderscore = fileName.LastIndexOf('_');
-            if (lastUnderscore == -1) continue; 
-            
-            string baseName = fileName.Substring(0, lastUnderscore);
             
             if (!groups.ContainsKey(baseName)) groups[baseName] = new List<string>();
             groups[baseName].Add(file);
@@ -48,7 +59,7 @@ public class MaskMapGenerator : EditorWindow
 
         if (validTextureCount == 0)
         {
-            Debug.LogError("ERROR: Found 0 PNG or JPG files in the selected folder!");
+            Debug.LogError("ERROR: Found 0 matching texture files (Metallic, AO, Roughness) in the selected folder!");
             return;
         }
 
@@ -66,20 +77,28 @@ public class MaskMapGenerator : EditorWindow
     static bool PackMaskMap(string baseName, List<string> files, string outputPath, bool deleteOriginals)
     {
         Texture2D metallic = null, ao = null, roughness = null;
-        
-        // Keep track of the specific paths so we know what to delete
         string metallicPath = "", aoPath = "", roughnessPath = "";
 
         foreach (string path in files)
         {
-            byte[] data = File.ReadAllBytes(path);
-            Texture2D tex = new Texture2D(2, 2);
-            tex.LoadImage(data);
+            // FIX 3: Load textures via AssetDatabase to natively support TGA formats
+            string relativePath = FileUtil.GetProjectRelativePath(path);
+            
+            // Ensure texture is readable before trying to use GetPixel()
+            TextureImporter importer = AssetImporter.GetAtPath(relativePath) as TextureImporter;
+            if (importer != null && !importer.isReadable)
+            {
+                importer.isReadable = true;
+                importer.SaveAndReimport();
+            }
+
+            Texture2D tex = AssetDatabase.LoadAssetAtPath<Texture2D>(relativePath);
+            if (tex == null) continue;
 
             string fileNameLower = Path.GetFileNameWithoutExtension(path).ToLower();
 
             if (fileNameLower.EndsWith("_metallic")) { metallic = tex; metallicPath = path; }
-            else if (fileNameLower.EndsWith("_ao")) { ao = tex; aoPath = path; }
+            else if (fileNameLower.EndsWith("_mixed_ao") || fileNameLower.EndsWith("_ao")) { ao = tex; aoPath = path; }
             else if (fileNameLower.EndsWith("_roughness")) { roughness = tex; roughnessPath = path; }
         }
 
@@ -104,10 +123,9 @@ public class MaskMapGenerator : EditorWindow
         }
 
         byte[] pngData = maskMap.EncodeToPNG();
-        string finalFilePath = Path.Combine(outputPath, baseName + "_maskmap.png");
+        string finalFilePath = Path.Combine(outputPath, baseName + "_MaskMap.png");
         File.WriteAllBytes(finalFilePath, pngData);
 
-        // --- DELETION LOGIC ---
         if (deleteOriginals)
         {
             if (metallic != null) SafeDelete(metallicPath);
@@ -118,18 +136,11 @@ public class MaskMapGenerator : EditorWindow
         return true;
     }
 
-    // Helper function to delete the image AND its Unity .meta file
     static void SafeDelete(string path)
     {
-        if (File.Exists(path)) 
-        {
-            File.Delete(path);
-        }
+        if (File.Exists(path)) File.Delete(path);
         
         string metaPath = path + ".meta";
-        if (File.Exists(metaPath)) 
-        {
-            File.Delete(metaPath);
-        }
+        if (File.Exists(metaPath)) File.Delete(metaPath);
     }
 }
