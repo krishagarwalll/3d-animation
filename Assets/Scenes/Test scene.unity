@@ -256,10 +256,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scavenger
       objectReference: {fileID: 0}
+    - target: {fileID: 6694424133172151903, guid: e5d7f5991d76d492c8a4e14a6cdf8f02, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8790559874135118719, guid: e5d7f5991d76d492c8a4e14a6cdf8f02, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 1bcc63db7163e4b6688bfbfed7faf592, type: 2}
+    - target: {fileID: 8790559874135118719, guid: e5d7f5991d76d492c8a4e14a6cdf8f02, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -665,6 +673,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knife
       objectReference: {fileID: 0}
+    - target: {fileID: 1196845172897766, guid: 101192a53e3421846b194658d243ccd7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4390119426965160, guid: 101192a53e3421846b194658d243ccd7, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.4500206
@@ -827,7 +839,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793570245}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c93a0ea310ac423eb627b9c3194f898, type: 3}
   m_Name: 
@@ -1187,6 +1199,71 @@ MonoBehaviour:
   - {fileID: 2080324504}
   - {fileID: 744618564}
   - {fileID: 1849172692}
+--- !u!1001 &2064191850
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2520050887677840073, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: knifeObject
+      value: 
+      objectReference: {fileID: 1633617190}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286623848, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_Name
+      value: Scavengiato
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286623848, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
 --- !u!4 &2080324504 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3089778326687310312, guid: e5d7f5991d76d492c8a4e14a6cdf8f02, type: 3}
@@ -1222,6 +1299,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3673308251522683578, guid: e5d7f5991d76d492c8a4e14a6cdf8f02, type: 3}
   m_PrefabInstance: {fileID: 514557465}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8687503181996530150
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2520050887677840073, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: knifeObject
+      value: 
+      objectReference: {fileID: 1633617190}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5987613
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000000035572526
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.17019634
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286397512, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286623848, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_Name
+      value: Skin_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944286623848, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281622944295992038, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 45c9e89de11dfc64f9066f5816e8b140, type: 3}
+    - target: {fileID: 6281622944295992038, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'index_03_l'\n\tTransform 'pinky_03_l'\n\tTransform
+        'ring_02_l'\n\tTransform 'middle_01_l'\n\tTransform 'index_01_l'\n\tTransform
+        'ring_01_l'\n\tTransform 'ring_03_l'\n\tTransform 'pinky_02_l'\n\tTransform
+        'thumb_03_l'\n\tTransform 'thumb_02_l'\n\tand more ...\n\tFrom animation
+        clip 'LeftHand_KnifeGrip'\n\tFrom animation clip 'LeftHand_KnifeGrip'"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e26b3bf93465a4e61b049dcae9d6863c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1230,3 +1386,5 @@ SceneRoots:
   - {fileID: 1871326479}
   - {fileID: 1633617189}
   - {fileID: 514557465}
+  - {fileID: 8687503181996530150}
+  - {fileID: 2064191850}
