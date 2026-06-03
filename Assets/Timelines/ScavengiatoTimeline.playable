@@ -761,7 +761,7 @@ MonoBehaviour:
   m_Name: AnimationPlayableAsset
   m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.AnimationPlayableAsset
   m_Clip: {fileID: 7400000, guid: 77be25c4850c645489e6efb8b7e49cd4, type: 2}
-  m_Position: {x: -20.579939, y: 0.12162798, z: 11.575743}
+  m_Position: {x: -20.55364, y: 0.12162798, z: 11.083777}
   m_EulerAngles: {x: 0, y: -26.669, z: 0}
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
@@ -1056,25 +1056,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1332,7 +1314,7 @@ MonoBehaviour:
   m_Name: AnimationPlayableAsset
   m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.AnimationPlayableAsset
   m_Clip: {fileID: 7400000, guid: 15e767ca0b08f43988c40a05f801025f, type: 2}
-  m_Position: {x: -21.76268, y: 0.15171325, z: 13.354044}
+  m_Position: {x: -21.597149, y: 0.15171325, z: 12.957579}
   m_EulerAngles: {x: 0, y: -52.907, z: 0}
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
