@@ -119,6 +119,6 @@ Material:
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _Grid_Density: {r: 6, g: 6, b: 0, a: 0}
-    - _Window_Color: {r: 5.823338, g: 5.9921575, b: 0.5935628, a: 1}
+    - _Window_Color: {r: 93.17341, g: 95.87452, b: 9.4970045, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

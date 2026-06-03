@@ -1585,6 +1585,7 @@ MonoBehaviour:
   - {fileID: -8441433862499255109}
   - {fileID: 2525344422987928510}
   - {fileID: -3673829965041723208}
+  - {fileID: 8712539824210947150}
 --- !u!114 &448115243408767295
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -2668,6 +2669,49 @@ MonoBehaviour:
   opacity:
     m_OverrideState: 1
     m_Value: 1
+--- !u!114 &8712539824210947150
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edd84a052e7edbb41a966585293f2e52, type: 3}
+  m_Name: LensDistortionBrownConrady
+  m_EditorClassIdentifier: Unity.LiveCapture.Cameras::Unity.LiveCapture.Cameras.Rendering.LensDistortionBrownConrady
+  active: 1
+  FieldOfView:
+    m_OverrideState: 1
+    m_Value: {x: 45, y: 45}
+  DistortionScale:
+    m_OverrideState: 1
+    m_Value: 1
+  RadialDistortionCoefficients:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 0}
+  TangentialDistortionCoefficients:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0}
+  PrincipalPoint:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0}
+  OutOfViewportColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  ShowGrid:
+    m_OverrideState: 1
+    m_Value: 0
+  GridColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  GridResolution:
+    m_OverrideState: 1
+    m_Value: 12
+  GridLineWidth:
+    m_OverrideState: 1
+    m_Value: 6
 --- !u!114 &8756916166469995173
 MonoBehaviour:
   m_ObjectHideFlags: 3
