@@ -71,7 +71,7 @@ Material:
     - _OpaqueCullMode: 2
     - _PerPixelSorting: 0
     - _RenderQueueType: 4
-    - _ScanLineDensity: 200
+    - _ScanLineDensity: 40
     - _ScanLineSpeed: 0.1
     - _SrcBlend: 1
     - _StencilRef: 0
@@ -95,10 +95,10 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.8207547, g: 0.096787095, b: 0.104921736, a: 1}
+    - _BaseColor: {r: 0.027055884, g: 0.032673195, b: 0.3018868, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _HologramTint: {r: 0.10980387, g: 0.18950081, b: 1.4980392, a: 1}
+    - _HologramTint: {r: 0.87843096, g: 1.5160065, b: 11.984314, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &1497144220194393702
