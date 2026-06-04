@@ -2180,7 +2180,7 @@ Light:
   serializedVersion: 12
   m_Type: 6
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.5
   m_Range: 3
   m_SpotAngle: 84.06666
   m_InnerSpotAngle: 30
@@ -5385,7 +5385,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 342679325773886913, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 200
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 628998146679535602, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: m_Layer
@@ -5406,6 +5406,10 @@ PrefabInstance:
     - target: {fileID: 3512460350505651903, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168074558002456778, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
+      propertyPath: intensity
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 4471720668512486659, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5449,7 +5453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6894592174296404785, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 200
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 7442321177565666642, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: VelocityModule.x.scalar
@@ -5457,7 +5461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7442321177565666642, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 200
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 7965158806931198572, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: m_Layer
@@ -14381,7 +14385,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 342679325773886913, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 200
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 628998146679535602, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: m_Layer
@@ -14402,6 +14406,10 @@ PrefabInstance:
     - target: {fileID: 3512460350505651903, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168074558002456778, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
+      propertyPath: intensity
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 4471720668512486659, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14445,7 +14453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6894592174296404785, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 200
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 7442321177565666642, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: VelocityModule.x.scalar
@@ -14453,7 +14461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7442321177565666642, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 200
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 7965158806931198572, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: m_Layer
@@ -15396,7 +15404,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 342679325773886913, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 200
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 628998146679535602, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: m_Layer
@@ -15417,6 +15425,10 @@ PrefabInstance:
     - target: {fileID: 3512460350505651903, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168074558002456778, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
+      propertyPath: intensity
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 4471720668512486659, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15460,7 +15472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6894592174296404785, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 200
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 7442321177565666642, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: VelocityModule.x.scalar
@@ -15468,7 +15480,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7442321177565666642, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 200
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 7965158806931198572, guid: 683a2d7116e84a6c812c8168807ea464, type: 3}
       propertyPath: m_Layer
@@ -28995,7 +29007,7 @@ Light:
   serializedVersion: 12
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
