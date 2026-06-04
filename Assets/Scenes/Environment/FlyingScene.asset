@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: Night_environment Profile
+  m_Name: FlyingScene
   m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.VolumeProfile
   components:
   - {fileID: -2031958368014620963}
@@ -682,13 +682,13 @@ MonoBehaviour:
     m_Value: 1000
   baseHeight:
     m_OverrideState: 1
-    m_Value: 500
+    m_Value: 600
   maximumHeight:
     m_OverrideState: 0
-    m_Value: 500
+    m_Value: 1000
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 15
+    m_Value: 200
   enableVolumetricFog:
     m_OverrideState: 1
     m_Value: 1
@@ -819,7 +819,7 @@ MonoBehaviour:
     m_Value: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.8
   intensity:
     m_OverrideState: 1
     m_Value: 0.735
