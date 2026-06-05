@@ -1,14 +1,7 @@
 fileFormatVersion: 2
-guid: 4dbc1c79fed5541488742020d7a67e34
+guid: df002b42f29844a5eaa14f12bd0a6fc5
 DefaultImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 205897
-  packageName: Free Test Character Asuna
-  packageVersion: 2.1
-  assetPath: Assets/FreeTestCharacterAsuna/Textures/AsunaBody/AsunaBodyPSDSourcefile.zip
-  uploadId: 595428
